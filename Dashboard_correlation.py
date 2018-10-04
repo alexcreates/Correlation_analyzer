@@ -10,7 +10,7 @@ DEBUG = True
 
 app = dash.Dash()
 app.config['suppress_callback_exceptions']=True
-df = pd.read_csv('/Users/mac/Desktop/PyFi/Historical_Stock_Data/Yahoo/ASYS_1983_daily.csv', index_col='Date', parse_dates=True)
+df = pd.read_csv('Insert_target_file_path', index_col='Date', parse_dates=True)
 
 
 features = df.columns
